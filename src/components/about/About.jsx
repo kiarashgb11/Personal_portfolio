@@ -31,7 +31,7 @@ const About = () => {
             <article className ='about__card'>
               <AiOutlineCodeSandbox className ='about__icon'/>
               <h5>Programming Languages</h5>
-              <small>7+</small>
+              <small>10+</small>
             </article>
           </div>
 

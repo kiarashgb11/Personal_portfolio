@@ -40,7 +40,7 @@ body {
     background: car(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/background.png);
+    background-image: url(../src/assets/back1.png);
 }
 
 /* ================= GENRERAL STYLES ================= */

@@ -85,6 +85,27 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon'/> 
               <div>
+                <h4>SQL</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsFillCheckCircleFill className='experience__details-icon'/> 
+              <div>
+                <h4>Assembly</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsFillCheckCircleFill className='experience__details-icon'/> 
+              <div>
+                <h4>Verilog</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsFillCheckCircleFill className='experience__details-icon'/> 
+              <div>
                 <h4>MATLAB</h4>
                 <small className='text-light'>Beginner</small>
               </div>
