@@ -1,102 +1,122 @@
-import React from 'react'
-import './services.css'
-import {AiOutlineCheck} from 'react-icons/ai'
+import React from 'react';
+import './services.css';
+import { AiOutlineCheck } from 'react-icons/ai';
 
 const Services = () => {
   return (
-    <section id ='services'>
+    <section id='services'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
 
       <div className="container services__container">
-        <article className = "service">
+        {/* Frontend Development */}
+        <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Frontend Development</h3>
           </div>
 
-          <p className='service__list'>
+          <ul className='service__list'>
             <li>
-              <AiOutlineCheck className ='service__list-icon'/>
-              <p>Proficient in web development, with a demonstrated track record including the creation of this personal portfolio website.</p>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Developed highly responsive and interactive user interfaces using React, focusing on delivering a seamless user experience across various devices and screen sizes.</p>
             </li>
             <li>
-              <AiOutlineCheck className = 'service__list-icon'/>
-              <p>Strong command of core web technologies, including JavaScript, HTML, and CSS, enabling the development of interactive and visually appealing web applications.</p>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Built dynamic single-page applications (SPAs) leveraging React’s component-based architecture, enabling efficient data management and real-time updates within the UI.</p>
             </li>
             <li>
-              <AiOutlineCheck className = 'service__list-icon'/>
-              <p>Experienced in React, a popular JavaScript library for building user interfaces, facilitating the development of dynamic and responsive web solutions.</p>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Implemented sophisticated state management solutions using React Query, ensuring smooth data retrieval, caching, and synchronization with the server, significantly improving frontend performance.</p>
             </li>
             <li>
-              <AiOutlineCheck className = 'service__list-icon'/>
-              <p>Familiar with version control systems like Git, ensuring efficient collaboration and code management in web development projects.</p>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Enhanced user interaction and visualization by integrating data visualization libraries, transforming complex data into accessible and visually appealing charts and graphs.</p>
             </li>
             <li>
-              <AiOutlineCheck className = 'service__list-icon'/>
-              <p>Committed to staying updated with the latest web development trends and technologies, ensuring the delivery of cutting-edge solutions.</p>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Designed and maintained CSS stylesheets, ensuring a consistent and polished visual presentation across all web applications. Employed CSS preprocessors like SASS for more efficient and modular styling.</p>
             </li>
-          </p>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Collaborated with backend developers to create a seamless API integration, ensuring efficient communication between the frontend and backend, and enhancing the overall application functionality.</p>
+            </li>
+          </ul>
         </article>
-        {/*End of Web Development*/}
+        {/*End of Frontend Development*/}
+
+        {/* Backend Development */}
         <article className="service">
-  <div className="service__head">
-    <h3>App Development & Technical Integration</h3>
-  </div>
+          <div className="service__head">
+            <h3>Backend Development</h3>
+          </div>
 
-  <ul className='service__list'> {/* Still recommend <ul> for semantic correctness */}
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Proficient in app development with hands-on experience in creating the Soccer Stats app, providing detailed statistics for 60+ soccer teams and 1500+ players in Europe's top 3 leagues.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Skilled in React Native, a versatile framework for building cross-platform mobile applications, ensuring a seamless and efficient user experience on both iOS and Android.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Utilize JSS (JavaScript Stylesheets) to maintain well-structured and maintainable code while styling the app for a visually appealing and consistent look.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Expanded expertise into backend technologies with a focus on database management using Django, enhancing app functionality and user engagement through efficient data handling and API integration.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Currently leading the development of an Interactive Maps Application for a university project. This involves integrating C++ and the STL library for optimized performance, managing API calls for real-time data processing, and collaborating on UI/UX design for intuitive navigation and aesthetic appeal.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Committed to continuous learning and staying updated with the latest advancements in app development to deliver innovative and user-centric solutions.</p>
-    </li>
-  </ul>
-</article>
+          <ul className='service__list'>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Architected and implemented RESTful APIs, integrating complex business logic and ensuring efficient data flow and user interactions within various applications.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Optimized database queries and data storage strategies by scripting efficient MongoDB operations, which significantly improved the application's performance and scalability.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Engineered search functionality by incorporating Apache Solr, enhancing the system's search capabilities and delivering a more intuitive and faster search experience for users.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Utilized Java and Spring Boot to develop robust backend services, facilitating secure and reliable communication between the frontend and backend, and ensuring the stability of web and mobile applications.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Implemented user authentication and authorization mechanisms to safeguard application data and provide secure access control across different user roles.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Developed and maintained server-side logic, including data processing pipelines, ensuring that backend systems were highly available, scalable, and efficient under load.</p>
+            </li>
+          </ul>
+        </article>
+        {/*End of Backend Development*/}
 
-      {/*End of App Development*/}
-      <article className="service">
-  <div className="service__head">
-    <h3>Data Analytics</h3>
-  </div>
+        {/* Machine Learning */}
+        <article className="service">
+          <div className="service__head">
+            <h3>Machine Learning</h3>
+          </div>
 
-  <ul className='service__list'> {/* Updated to <ul> for proper list structure */}
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Experienced in creating advanced web scrapers using Python, facilitating the extraction of valuable information and summarization of discussions and reports from a company's GitHub community. This skill has been pivotal in deriving insights and supporting data-driven decision-making.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Proficient in database management using SQL, capable of designing, implementing, and maintaining efficient databases. My work includes optimizing data storage, retrieval, and manipulation processes, enabling sophisticated data analysis and reporting.</p>
-    </li>
-    <li>
-      <AiOutlineCheck className='service__list-icon'/>
-      <p>Committed to leveraging analytical skills to transform complex datasets into actionable insights, thus enhancing business intelligence and operational strategies.</p>
-    </li>
-  </ul>
-</article>
+          <ul className='service__list'>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Designed and trained deep learning models using PyTorch, leveraging transfer learning techniques to enhance model accuracy in tasks such as image classification and segmentation.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Developed a Skin Cancer Classifier using a combination of U-Net for precise image segmentation and CNNs for feature extraction, achieving an 85% accuracy rate, demonstrating significant potential in real-world diagnostic applications.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Engineered advanced data augmentation pipelines to counteract data insufficiency, ensuring the deep learning models were trained on diverse and representative datasets, improving model robustness.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Utilized TensorFlow and PyTorch to build, train, and evaluate machine learning models, focusing on optimizing hyperparameters and model architectures to achieve superior performance.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Implemented real-time data processing and prediction pipelines, integrating machine learning models into applications for live data analysis and decision-making.</p>
+            </li>
+            <li>
+              <AiOutlineCheck className='service__list-icon'/>
+              <p>Continuously explored and adopted the latest advancements in machine learning research, ensuring that models and methods employed were state-of-the-art and applicable to real-world problems.</p>
+            </li>
+          </ul>
+        </article>
+        {/*End of Machine Learning*/}
 
-      {/*End of  3D Modelling*/}
       </div>
     </section>
-  )
+  );
 }
 
-export default Services
+export default Services;

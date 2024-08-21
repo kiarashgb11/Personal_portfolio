@@ -21,12 +21,12 @@ const About = () => {
             <article className ='about__card'>
               <BsAward className ='about__icon'/>
               <h5>Experience</h5>
-              <small>2+ Years</small>
+              <small>3+ Years</small>
             </article>
             <article className ='about__card'>
               <BsFolderPlus className ='about__icon'/>
               <h5>Projects</h5>
-              <small>10+</small>
+              <small>15+</small>
             </article>
             <article className ='about__card'>
               <AiOutlineCodeSandbox className ='about__icon'/>
@@ -36,7 +36,7 @@ const About = () => {
           </div>
 
           <p>
-          "I am a second-year student at the University of Toronto, majoring in computer engineering, with an anticipated graduation date through the PEY co-op program in April 2027. Sporting a commendable CGPA of 3.5, I excel both in academics and extracurricular undertakings. My previous role as a computer science club co-leader in high school equipped me with valuable project management and collaboration skills. Additionally, I've dedicated over three years to tutoring, imparting knowledge in programming and mathematics. Beyond my academic pursuits, I have several programming experiences, including the development of an app that imports soccer statistics using APIs, the creation of this portfolio website, and 3D modeling for the design of actuator mounts used for prosthetic limbs at the University of Toronto's Robotics Institute. These self-initiated projects have further enriched my skill set, making me well-prepared to contribute to the world of computer engineering"
+          "I am a third-year student at the University of Toronto, majoring in Computer Engineering, with an anticipated graduation date through the PEY co-op program in April 2027. With a strong academic foundation, I have completed coursework in Linear Algebra, Programming Fundamentals, Digital Systems, and Applied Fundamentals of Deep Learning, maintaining a commendable CGPA of 3.5. My experience includes a recent role as a Fullstack Developer intern at Toronto Metropolitan University, where I designed and implemented RESTful APIs, optimized database interactions with MongoDB, and enhanced frontend interfaces using React. Additionally, I have freelanced as a web developer, creating a responsive business website for RENOV8 INC. My programming experience extends to projects like a Deep Learning Skin Cancer Classifier, an Interactive Maps Application, and a Digital Game System using FPGA, all of which demonstrate my proficiency in languages such as Java, Python, and C++. These experiences, combined with my dedication to academic and extracurricular pursuits, have equipped me with a diverse skill set that I am eager to apply in the field of Computer Engineering."
           </p>
 
           <a href = "#contact" className = 'btn btn-primary'>Let's Talk</a>
