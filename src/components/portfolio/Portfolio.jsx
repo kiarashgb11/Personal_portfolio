@@ -22,7 +22,7 @@ const data = [
     id: 2,
     image: skinCancerIMG,
     title: 'Skin Cancer Classifier (AI)',
-    link: '',
+    link: 'https://colab.research.google.com/drive/1-QpGZ_h3io6Ru_r1XQSGvvbvE3AIFTNA?usp=sharing',
     isGoogleColab: true,
   },
   {
