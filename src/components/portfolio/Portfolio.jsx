@@ -1,104 +1,62 @@
-import React from 'react';
-import "./portfolio.css";
-import IMG1 from '../../assets/soccerStats.png';
-import IMG2 from '../../assets/webDev.jpeg';
-import IMG3 from '../../assets/actuator.png';
-import IMG4 from '../../assets/pongGame.png';
-import IMG5 from '../../assets/fpga.jpeg';
-import IMG6 from '../../assets/scrap.avif';
-import mapsIMG from '../../assets/Maps.PNG';
-import gestureIMG from '../../assets/Gesture.jpg';
-import skinCancerIMG from '../../assets/SkinCancer.jpeg';
+import React from 'react'
+import './portfolio.css'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { additionalProjects, featuredProjects } from '../../data/portfolioData'
 
-const data = [
-  {
-    id: 1,
-    image: mapsIMG,
-    title: 'TransitHub - Interactive Maps Application',
-    link: 'https://github.com/kiarashgb11/TransitHub',
-    isGoogleColab: false,
-  },
-  {
-    id: 2,
-    image: skinCancerIMG,
-    title: 'Skin Cancer Classifier (AI)',
-    link: 'https://colab.research.google.com/drive/1-QpGZ_h3io6Ru_r1XQSGvvbvE3AIFTNA?usp=sharing',
-    isGoogleColab: true,
-  },
-  {
-    id: 3,
-    image: IMG1,
-    title: 'Soccer Data and Statistics App',
-    link: 'https://github.com/VJalal/SportApp',
-    isGoogleColab: false,
-  },
-  {
-    id: 4,
-    image: gestureIMG,
-    title: 'Gesture Recognition (AI)',
-    link: 'https://colab.research.google.com/drive/1tdia-3KiJwDZVjJyPkTS6F3jFk952OJv?usp=sharing',
-    isGoogleColab: true,
-  },
-  {
-    id: 5,
-    image: IMG2,
-    title: 'Portfolio Website',
-    link: 'https://github.com/kiarashgb11/Personal_portfolio',
-    isGoogleColab: false,
-  },
-  {
-    id: 6,
-    image: IMG5,
-    title: 'Digital Game System - FPGA Development',
-    link: 'https://github.com/kiarashgb11/Digital-Game-System---FPGA-Development',
-    isGoogleColab: false,
-  },
-  {
-    id: 7,
-    image: IMG6,
-    title: 'Smart Web Scrapper & Summarizer',
-    link: 'https://github.com/kiarashgb11/Smart-Web-Scrapper-Summarizer',
-    isGoogleColab: false,
-  },
-  {
-    id: 8,
-    image: IMG3,
-    title: 'Actuator Mount 3D Design',
-    link: 'https://github.com/kiarashgb11/Actuator_mount_AutoCad',
-    isGoogleColab: false,
-  },
-  {
-    id: 9,
-    image: IMG4,
-    title: 'Pong Game',
-    link: 'https://github.com/kiarashgb11/Pong_Game',
-    isGoogleColab: false,
-  }
-];
+const RaftVisual = () => (
+  <div className="raft-visual" aria-label="Diagram of a Raft leader replicating a log to two follower nodes" role="img">
+    <div className="raft-grid" />
+    <div className="raft-line raft-line--left"><i /><i /><i /></div>
+    <div className="raft-line raft-line--right"><i /><i /><i /></div>
+    <div className="raft-node raft-node--leader"><span>Leader</span><strong>01</strong><small>term 08</small></div>
+    <div className="raft-node raft-node--left"><span>Follower</span><strong>02</strong><small>synced</small></div>
+    <div className="raft-node raft-node--right"><span>Follower</span><strong>03</strong><small>synced</small></div>
+    <div className="raft-log"><span>replicated log</span><div><i /><i /><i /><i /><i /></div></div>
+  </div>
+)
 
-const Portfolio = () => {
-  return (
-    <section id='portfolio'>
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+const FeaturedProject = ({ project }) => (
+  <article className={`featured-project featured-project--${project.id}`} data-reveal>
+    <div className="featured-project__content">
+      <div className="project-kicker"><span>{project.number}</span>{project.eyebrow}</div>
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+      {project.metrics && (
+        <div className="project-metrics">
+          {project.metrics.map((metric) => <div key={metric.label}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
+        </div>
+      )}
+      <div className="tag-list">{project.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div>
+      {project.note && <p className="project-note">{project.note}</p>}
+      <a className="project-link" href={project.link} target="_blank" rel="noreferrer">{project.linkLabel} <FiArrowUpRight /></a>
+    </div>
+    <div className="featured-project__visual">
+      {project.visual === 'raft' ? <RaftVisual /> : <img src={project.image} alt={project.imageAlt} loading="lazy" />}
+    </div>
+  </article>
+)
 
-      <div className="container portfolio__container">
-        {data.map(({ id, image, title, link, isGoogleColab }) => (
-          <article key={id} className='portfolio__item'>
-            <div className="portfolio__item-image">
-              <img src={image} alt={title} />
-            </div>
-            <h3>{title}</h3>
-            <div className="portfolio__item-cta">
-              <a href={link} className='btn' target='_blank' rel="noopener noreferrer">
-                {isGoogleColab ? 'Google Colab' : 'Github'}
-              </a>
-            </div>
-          </article>
+const Portfolio = () => (
+  <section className="section portfolio" id="projects">
+    <div className="container">
+      <div className="section-heading section-heading--split" data-reveal>
+        <div><span className="section-index">03 / Selected work</span><h2>Built to understand how things work.</h2></div>
+        <p>Projects across machine learning, distributed correctness, algorithms, product software, and hardware.</p>
+      </div>
+      <div className="featured-projects">
+        {featuredProjects.map((project) => <FeaturedProject project={project} key={project.id} />)}
+      </div>
+      <div className="projects-subheading" data-reveal><div><span>Archive</span><h3>Additional projects</h3></div><span>{String(additionalProjects.length).padStart(2,'0')} projects</span></div>
+      <div className="additional-projects">
+        {additionalProjects.map((project,index) => (
+          <a className="project-card" href={project.link} target="_blank" rel="noreferrer" key={project.title} data-reveal style={{ '--reveal-delay': `${(index % 3) * 70}ms` }}>
+            <div className="project-card__image"><img src={project.image} alt={project.imageAlt} loading="lazy" /><span>{project.type}</span></div>
+            <div className="project-card__body"><div className="project-card__title"><h4>{project.title}</h4><FiArrowUpRight /></div><p>{project.description}</p><div className="tag-list">{project.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div></div>
+          </a>
         ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+)
 
-export default Portfolio;
+export default Portfolio

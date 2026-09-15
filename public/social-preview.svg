@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><radialGradient id="g" cx="80%" cy="10%" r="80%"><stop stop-color="#18345a"/><stop offset="1" stop-color="#080b11"/></radialGradient><pattern id="p" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0v54" fill="none" stroke="#fff" stroke-opacity=".04"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#g)"/><rect width="1200" height="630" fill="url(#p)"/>
+  <text x="90" y="130" fill="#62a8ff" font-family="monospace" font-size="22" letter-spacing="4">COMPUTER ENGINEER · UNIVERSITY OF TORONTO</text>
+  <text x="90" y="270" fill="#f3f6fb" font-family="Arial,sans-serif" font-size="78" font-weight="700">Kiarash Alirezaei</text>
+  <text x="90" y="370" fill="#b5bdca" font-family="Arial,sans-serif" font-size="44">Systems · AI · Distributed Software</text>
+  <path d="M90 470h760" stroke="#62a8ff" stroke-width="2" stroke-opacity=".45"/><circle cx="90" cy="470" r="7" fill="#62a8ff"/><circle cx="470" cy="470" r="7" fill="#62a8ff"/><circle cx="850" cy="470" r="7" fill="#62a8ff"/>
+  <text x="1020" y="535" fill="#f3f6fb" font-family="Arial,sans-serif" font-size="54" font-weight="700">KA<tspan fill="#62a8ff">.</tspan></text>
+</svg>

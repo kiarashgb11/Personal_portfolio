@@ -1,0 +1,12 @@
+.expertise__grid { display: grid; grid-template-columns: repeat(6,1fr); border-top: 1px solid var(--color-line); border-left: 1px solid var(--color-line); }
+.expertise-card { grid-column: span 2; min-height: 25rem; display: flex; flex-direction: column; padding: clamp(1.5rem,2.6vw,2.3rem); border-right: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); background: rgba(255,255,255,.012); transition: background 250ms ease; }
+.expertise-card:hover { background: rgba(98,168,255,.035); }
+.expertise-card--secondary { grid-column: span 3; min-height: 21rem; background: rgba(255,255,255,.008); }
+.expertise-card--secondary h3 { margin-top: 2.5rem; }
+.expertise-card__number { color: var(--color-accent); font: .62rem var(--font-mono); }
+.expertise-card h3 { max-width: 12ch; margin-top: 3.5rem; font-size: clamp(1.35rem,2.2vw,1.85rem); line-height: 1.2; letter-spacing: -.03em; }
+.expertise-card > p { margin-top: .8rem; color: var(--color-muted); font-size: .8rem; line-height: 1.65; }
+.expertise-card__skills { display: flex; flex-wrap: wrap; align-content: flex-end; gap: .42rem; margin-top: auto; padding-top: 2rem; }
+.expertise-card__skills span { padding: .28rem .5rem; border: 1px solid var(--color-line); border-radius: .3rem; color: var(--color-muted-strong); font: .61rem var(--font-mono); }
+@media (max-width:900px) { .expertise__grid { grid-template-columns: 1fr 1fr; }.expertise-card,.expertise-card--secondary { grid-column: span 1; } }
+@media (max-width:560px) { .expertise__grid { grid-template-columns: 1fr; } .expertise-card { min-height: 21rem; } }

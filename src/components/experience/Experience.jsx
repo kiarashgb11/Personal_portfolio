@@ -1,127 +1,31 @@
 import React from 'react'
 import './experience.css'
-import {BsFillCheckCircleFill} from 'react-icons/bs'
+import { experiences } from '../../data/portfolioData'
 
-const Experience = () => {
-  return (
-    <section id = 'experience'>
-      <h5>What Skills I have</h5>
-      <h2>My Experience</h2>
-
-      <div className ="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>HTML</h4>
-                <small className='text-light'>Proficient</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>CSS</h4>
-                <small className='text-light'>Proficient</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>TypeScript</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>React Native</h4>
-                <small className='text-light'>Proficient</small>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div className="experience__backend">
-
-
-        <h3>Backened Development</h3>
-          <div className="experience__content">
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>Java</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>C</h4>
-                <small className='text-light'>Proficient</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>C++</h4>
-                <small className='text-light'>Advanced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>SQL</h4>
-                <small className='text-light'>Competent</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>Assembly</h4>
-                <small className='text-light'>Competent</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>Verilog</h4>
-                <small className='text-light'>Competent</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon'/>
-              <div>
-                <h4>MATLAB</h4>
-                <small className='text-light'>Competent</small>
-              </div>
-            </article>
-          </div>
-        </div>
+const Experience = () => (
+  <section className="section experience" id="experience">
+    <div className="container">
+      <div className="section-heading section-heading--split" data-reveal>
+        <div><span className="section-index">02 / Experience</span><h2>Work at the systems boundary.</h2></div>
+        <p>Industry and research experience spanning runtime internals, platform engineering, search systems, and product software.</p>
       </div>
-    </section>
-  )
-}
+      <div className="experience__timeline">
+        {experiences.map((experience,index) => (
+          <article className="experience__item" key={experience.company} data-reveal style={{ '--reveal-delay': `${index * 100}ms` }}>
+            <div className="experience__rail"><span>{String(index + 1).padStart(2,'0')}</span></div>
+            <div className="experience__meta"><span>{experience.period}</span><span>{experience.focus}</span></div>
+            <div className="experience__body">
+              <p className="experience__company">{experience.company}</p>
+              <h3>{experience.role}</h3>
+              <p className="experience__summary">{experience.summary}</p>
+              <ul>{experience.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}</ul>
+              <div className="tag-list">{experience.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+)
 
 export default Experience
