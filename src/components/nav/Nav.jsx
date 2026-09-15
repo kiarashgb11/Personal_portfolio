@@ -36,7 +36,7 @@ const Nav = () => {
             return <a key={item.href} href={item.href} className={isActive ? 'active' : ''} onClick={() => setMenuOpen(false)}>{item.label}</a>
           })}
         </div>
-        <a className="nav__contact" href={CV} download>Résumé <FiDownload /></a>
+        <a className="nav__contact" href={CV} download>Resume <FiDownload /></a>
         <button className="nav__toggle" type="button" aria-expanded={menuOpen} aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} onClick={() => setMenuOpen((open) => !open)}>{menuOpen ? <FiX /> : <FiMenu />}</button>
       </div>
     </nav>

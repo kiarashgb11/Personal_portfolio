@@ -50,7 +50,7 @@ const Header = () => {
           </p>
           <div className="hero__actions">
             <a className="button button--primary" href="#projects">View projects <FiArrowDownRight /></a>
-            <a className="button button--accent" href={CV} download><FiDownload /> Download résumé</a>
+            <a className="button button--accent" href={CV} download><FiDownload /> Download resume</a>
             <a className="button button--secondary" href="#experience">Experience</a>
             <a className="icon-button" href="https://github.com/kiarashgb11" target="_blank" rel="noreferrer" aria-label="GitHub profile"><FiGithub /></a>
             <a className="icon-button" href="https://www.linkedin.com/in/kiarashalirezaei/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><FiLinkedin /></a>

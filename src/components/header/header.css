@@ -34,8 +34,8 @@
 .node-distributed { right: 4%; top: 5%; }
 .node-security { left: 1.5%; top: 39%; }
 .node-software { right: 1.5%; top: 39%; }
-.node-ai { left: 4%; bottom: 12%; }
-.node-hardware { right: 4%; bottom: 12%; }
+.node-ai { left: 4%; bottom: 20%; }
+.node-hardware { right: 4%; bottom: 20%; }
 .map-core { left: 50%; top: 43%; width: 5.5rem; height: 5.5rem; transform: translate(-50%,-50%); border-radius: 50%; color: var(--color-accent-soft); }
 .map-core strong { font: 600 1rem var(--font-mono); z-index: 2; }
 .core-ring { position: absolute; inset: -.75rem; border: 1px solid rgba(98,168,255,.24); border-radius: 50%; animation: pulse-ring 3s ease-in-out infinite; }
@@ -48,6 +48,6 @@
 .portrait-chip div { display: grid; }
 .portrait-chip strong { font-size: .68rem; font-weight: 600; }
 .portrait-chip span { color: var(--color-muted); font-size: .58rem; }
-.visual-link { position: absolute; right: 1.5rem; top: 5rem; display: flex; align-items: center; gap: .35rem; font: .65rem var(--font-mono); text-transform: uppercase; letter-spacing: .08em; }
+.visual-link { position: absolute; right: 1.5rem; top: 4.1rem; display: flex; align-items: center; gap: .35rem; font: .65rem var(--font-mono); text-transform: uppercase; letter-spacing: .08em; }
 @media (max-width:1100px) { .hero__container { grid-template-columns: 1fr; } .hero__content { max-width: 53rem; } .hero h1 { max-width: 12ch; } .hero__visual { width: min(100%,44rem); min-height: 37rem; } }
 @media (max-width:640px) { .hero { padding: 8.5rem 0 3.5rem; } .hero__eyebrow { align-items: flex-start; line-height: 1.5; } .hero h1 { max-width: 100%; font-size: clamp(2.65rem,11.5vw,3.8rem); overflow-wrap: anywhere; } .hero__actions .button { flex: 1 1 calc(50% - .75rem); } .hero__meta { align-items: flex-start; flex-direction: column; margin-top: 2.5rem; } .hero__meta > div:last-child { text-align: left; } .hero__visual { min-height: 31rem; } .map-node { width: 6.5rem; height: 4.2rem; padding: .5rem .55rem; } .map-node strong { font-size: .57rem; }.map-node small { font-size: .48rem; }.portrait-chip div,.visual-link { display: none; } }
