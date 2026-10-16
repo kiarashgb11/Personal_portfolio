@@ -87,7 +87,7 @@ const CurrentWork = () => (
     <div className="container">
       <div className="section-heading section-heading--split" data-reveal>
         <div><span className="section-index">03 / Current Research &amp; Development</span><h2>Building and researching what comes next.</h2></div>
-        <p>Active research and in-progress development, clearly separated from completed projects and professional experience.</p>
+        <p>Active research and in-progress development across embedded AI, model routing, accessibility, quantitative systems, and GPU computing.</p>
       </div>
       <div className="current-work__grid">
         {currentResearch.map((item, index) => <ResearchCard item={item} index={index} key={item.id} />)}
