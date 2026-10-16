@@ -44,12 +44,13 @@ const Header = () => {
           <p className="hero__name">Kiarash Alirezaei</p>
           <h1>Engineering across <span>systems, AI, security,</span> and distributed infrastructure.</h1>
           <p className="hero__description">
-            Computer Engineering student with experience ranging from CPython internals and
-            fault-tolerant systems to machine learning, secure software, backend development,
-            and hardware—grounded in how software interacts with real infrastructure.
+            Computer Engineering student building embedded AI and learning-based LLM systems,
+            from real-time multimedia processing to model routing. My systems background includes
+            CPython internals and compiler/runtime engineering at IBM, alongside fault-tolerant
+            distributed systems, secure software, and hardware.
           </p>
           <div className="hero__actions">
-            <a className="button button--primary" href="#projects">View projects <FiArrowDownRight /></a>
+            <a className="button button--primary" href="#research">View current work <FiArrowDownRight /></a>
             <a className="button button--accent" href={CV} download><FiDownload /> Download resume</a>
             <a className="button button--secondary" href="#experience">Experience</a>
             <a className="icon-button" href="https://github.com/kiarashgb11" target="_blank" rel="noreferrer" aria-label="GitHub profile"><FiGithub /></a>

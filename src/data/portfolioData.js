@@ -103,7 +103,7 @@ export const currentResearch = [
     tone: 'development',
     visual: 'trading',
     description:
-      'Developing a market-analysis agent around quantitative indicators, financial data, and structured decision support. The next phase introduces backtesting and evaluation alongside planned machine-learning forecasting and signal-generation work; no performance results are claimed yet.',
+      'Developing a market-analysis agent around quantitative indicators, financial data, and structured decision support. The next phase introduces backtesting and evaluation alongside planned machine-learning forecasting and signal-generation work.',
     technologies: ['Python', 'Machine Learning', 'Financial Data', 'Quantitative Analysis', 'Backtesting', 'Agents'],
   },
   {
@@ -234,8 +234,8 @@ export const expertiseGroups = [
   {
     number: '02',
     title: 'AI & Machine Learning',
-    description: 'Model development and practical computer-vision pipelines from training through evaluation.',
-    skills: ['PyTorch', 'TensorFlow', 'NumPy', 'Pandas', 'Deep Learning', 'Computer Vision', 'CNNs', 'U-Net', 'ResNet', 'ML Pipelines'],
+    description: 'Model routing, embedded intelligence, signal processing, and practical ML pipelines from development through evaluation.',
+    skills: ['LLM Routing', 'Model Selection', 'Embedded AI', 'Signal Processing', 'PyTorch', 'TensorFlow', 'NumPy', 'Pandas', 'Deep Learning', 'Computer Vision', 'CNNs', 'U-Net', 'ResNet', 'ML Pipelines'],
   },
   {
     number: '03',
@@ -258,14 +258,14 @@ export const expertiseGroups = [
   {
     number: '06',
     title: 'Hardware & Architecture',
-    description: 'Digital systems and the hardware boundary beneath modern software.',
-    skills: ['Verilog', 'FPGA', 'ModelSim', 'Quartus', 'Computer Architecture', 'Assembly', 'Digital Systems'],
+    description: 'Embedded computing, GPU development, digital systems, and the hardware boundary beneath modern software.',
+    skills: ['Raspberry Pi', 'CUDA', 'GPU Programming', 'Verilog', 'FPGA', 'ModelSim', 'Quartus', 'Computer Architecture', 'Assembly', 'Digital Systems'],
   },
   {
     number: '07',
-    title: 'DevOps & Engineering Tools',
-    description: 'Build, test, and delivery workflows that keep software dependable across platforms.',
-    skills: ['Git', 'Docker', 'Buildbot', 'Ansible', 'pytest', 'pip', 'venv', 'CI/CD', 'IBM Clang'],
+    title: 'DevOps, Cloud & Engineering Tools',
+    description: 'Cloud services and build, test, and delivery workflows that keep software dependable across platforms.',
+    skills: ['Azure', 'Git', 'Docker', 'Buildbot', 'Ansible', 'pytest', 'pip', 'venv', 'CI/CD', 'IBM Clang'],
     secondary: true,
   },
   {
