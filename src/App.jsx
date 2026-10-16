@@ -53,8 +53,8 @@ const App = () => {
         <Header />
         <About />
         <Experience />
-        <Portfolio />
         <CurrentWork />
+        <Portfolio />
         <Expertise />
         <Writing />
         <Education />

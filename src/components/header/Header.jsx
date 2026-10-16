@@ -56,7 +56,7 @@ const Header = () => {
             <a className="icon-button" href="https://www.linkedin.com/in/kiarashalirezaei/" target="_blank" rel="noreferrer" aria-label="LinkedIn profile"><FiLinkedin /></a>
           </div>
           <div className="hero__meta">
-            <div><span>Recent experience</span><strong>Compiler Developer Intern @ IBM</strong></div>
+            <div><span>Current experience</span><strong>Applied AI Engineer @ University of Toronto</strong></div>
             <div><span>Education</span><strong>BASc Computer Engineering · 2027</strong></div>
           </div>
         </div>

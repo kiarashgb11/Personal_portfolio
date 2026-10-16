@@ -31,8 +31,7 @@ const Nav = () => {
         <div className={`nav__links ${menuOpen ? 'is-open' : ''}`}>
           {navItems.map((item) => {
             const sectionId = item.href.slice(1)
-            const isProjects = sectionId === 'projects' && ['projects','current-work'].includes(activeSection)
-            const isActive = activeSection === sectionId || isProjects
+            const isActive = activeSection === sectionId
             return <a key={item.href} href={item.href} className={isActive ? 'active' : ''} onClick={() => setMenuOpen(false)}>{item.label}</a>
           })}
         </div>

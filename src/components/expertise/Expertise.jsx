@@ -6,8 +6,8 @@ const Expertise = () => (
   <section className="section expertise" id="expertise">
     <div className="container">
       <div className="section-heading section-heading--split" data-reveal>
-        <div><span className="section-index">05 / Expertise</span><h2>Domains, not a logo wall.</h2></div>
-        <p>Core engineering domains first, with a smaller layer of tools, business, product, and finance perspective.</p>
+        <div><span className="section-index">05 / Expertise</span><h2>Technical expertise.</h2></div>
+        <p>The technologies and engineering areas I work with across software, AI, systems, and hardware.</p>
       </div>
       <div className="expertise__grid">
         {expertiseGroups.map((group,index) => (

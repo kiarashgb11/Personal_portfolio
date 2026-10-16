@@ -10,13 +10,29 @@ import actuatorImage from '../assets/actuator.png';
 export const navItems = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Research', href: '#research' },
   { label: 'Projects', href: '#projects' },
   { label: 'Expertise', href: '#expertise' },
   { label: 'Writing', href: '#writing' },
+  { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const experiences = [
+  {
+    company: 'University of Toronto · AI Research Projects',
+    role: 'Applied AI Engineer · Undergraduate Research Assistant',
+    period: 'September 2026 — Present',
+    focus: 'Embedded AI · Accessible HCI',
+    summary:
+      'Working on applied AI systems spanning embedded real-time multimedia processing and accessible human-computer interaction.',
+    highlights: [
+      'Co-leading development of an embedded AI system that processes real-time audio and video streams on Raspberry Pi devices using signal fingerprinting and machine-learning techniques.',
+      'Developing C++ and Python pipelines that connect on-device processing with server-side inference, cloud storage, and device-management services.',
+      'Contributing to ML systems that translate visual interface content into interactive tactile representations for blind and low-vision users.',
+    ],
+    technologies: ['C++', 'Python', 'Raspberry Pi', 'Embedded AI', 'Signal Processing', 'Machine Learning', 'Computer Vision', 'Cloud Systems'],
+  },
   {
     company: 'IBM Canada',
     role: 'Compiler Developer Intern / Software Developer Co-op',
@@ -45,6 +61,61 @@ export const experiences = [
       'Worked with Apache Solr and search-oriented systems to support efficient data discovery and retrieval.',
     ],
     technologies: ['Java', 'Spring Boot', 'gRPC', 'Next.js', 'React', 'MongoDB', 'Apache Solr'],
+  },
+];
+
+export const currentResearch = [
+  {
+    id: 'embedded-multimedia',
+    title: 'Real-Time Embedded Multimedia Intelligence',
+    status: 'Primary research · Co-leading',
+    tone: 'primary',
+    visual: 'embedded',
+    description:
+      'Co-leading the development of an embedded AI system that processes real-time audio and video streams on Raspberry Pi devices. The work combines signal fingerprinting, machine-learning techniques, on-device processing, server-side inference, cloud storage, and device-management services through C++ and Python pipelines.',
+    technologies: ['Embedded AI', 'Raspberry Pi', 'C++', 'Python', 'Signal Fingerprinting', 'Real-Time Processing', 'Cloud Systems'],
+  },
+  {
+    id: 'llm-routing',
+    title: 'Learning-Based LLM Routing',
+    status: 'ECE496 capstone · Active research',
+    tone: 'active',
+    visual: 'routing',
+    description:
+      'Investigating how to select one suitable language model for each prompt before inference—without querying every candidate model. Active research and planned implementation directions include richer prompt representations, per-model quality and cost prediction, and uncertainty-aware selection.',
+    details: ['Accuracy, cost, robustness & latency trade-offs', 'RouterArena-style benchmark evaluation'],
+    technologies: ['LLMs', 'Model Routing', 'Machine Learning', 'NLP', 'Cost Optimization', 'Robustness', 'Inference'],
+  },
+  {
+    id: 'tactile-accessibility',
+    title: 'Dynamic Tactile Interfaces for Visual Accessibility',
+    status: 'Active research · Supporting project',
+    tone: 'supporting',
+    visual: 'tactile',
+    description:
+      'Contributing to an ML pipeline that translates visual interface content into interactive tactile representations for blind and low-vision users. The research explores computer vision, content segmentation, agent-assisted interface control, and user-feedback loops for presenting digital information through a 3D haptic device.',
+    technologies: ['Accessibility', 'Computer Vision', 'HCI', 'Machine Learning', 'Segmentation', 'Assistive Technology', 'Python'],
+  },
+  {
+    id: 'trading-agent',
+    title: 'ML-Powered Trading Agent',
+    status: 'Active development · Approaching phase 3',
+    tone: 'development',
+    visual: 'trading',
+    description:
+      'Developing a market-analysis agent around quantitative indicators, financial data, and structured decision support. The next phase introduces backtesting and evaluation alongside planned machine-learning forecasting and signal-generation work; no performance results are claimed yet.',
+    technologies: ['Python', 'Machine Learning', 'Financial Data', 'Quantitative Analysis', 'Backtesting', 'Agents'],
+  },
+  {
+    id: 'cuda-kernels',
+    title: 'CUDA Kernel Optimization',
+    status: 'Early-stage development',
+    tone: 'early',
+    visual: 'cuda',
+    description:
+      'Starting a CUDA C++ optimization project focused on implementing and benchmarking RMSNorm kernels. Current work is early-stage; the longer-term plan is to compare CPU, PyTorch GPU, and custom CUDA implementations while profiling kernel and memory behaviour.',
+    details: ['Block and thread configuration experiments', 'Planned fused RMSNorm + GELU operations', 'Future automated configuration selection'],
+    technologies: ['CUDA C++', 'GPU Programming', 'RMSNorm', 'PyTorch', 'Kernel Optimization', 'Performance Profiling'],
   },
 ];
 

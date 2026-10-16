@@ -40,7 +40,7 @@ const Portfolio = () => (
   <section className="section portfolio" id="projects">
     <div className="container">
       <div className="section-heading section-heading--split" data-reveal>
-        <div><span className="section-index">03 / Selected work</span><h2>Built to understand how things work.</h2></div>
+        <div><span className="section-index">04 / Selected work</span><h2>Built to understand how things work.</h2></div>
         <p>Projects across machine learning, distributed correctness, algorithms, product software, and hardware.</p>
       </div>
       <div className="featured-projects">

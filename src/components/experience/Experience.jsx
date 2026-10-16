@@ -7,7 +7,7 @@ const Experience = () => (
     <div className="container">
       <div className="section-heading section-heading--split" data-reveal>
         <div><span className="section-index">02 / Experience</span><h2>Work at the systems boundary.</h2></div>
-        <p>Industry and research experience spanning runtime internals, platform engineering, search systems, and product software.</p>
+        <p>Research and industry experience spanning embedded AI, runtime internals, platform engineering, search systems, and product software.</p>
       </div>
       <div className="experience__timeline">
         {experiences.map((experience,index) => (
